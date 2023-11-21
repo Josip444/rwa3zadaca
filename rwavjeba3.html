@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Josip Šimić" content="Vjezba">
+  <meta name="keywords" content="web, rwa, HTML, CSS, fsre, fakultet, fpmoz, mfmo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+	body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+	  background-color: #2326e8;
+	  color: #fff;
+	  text-align: center;
+	  padding: 1em 0;
+  
+	}
+
+.sveispodhedera 
+	{
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+nav
+	{
+		width:100%;
+		height:50px;
+		background-color:#191cbf;
+		padding:20px;
+		overflow: hidden;
+		
+	
+	}
+	
+	 nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      float: left;
+    }
+	
+	
+	 nav a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+.navtablica
+	{
+		 margin:0 10px;
+		 background-color:#24598f;
+		 width:600px;
+		 height:50px;
+	}
+.navlink
+	{
+		color:#ffffff;
+		
+	}
+	
+.redci
+	{
+		width:140px;
+		height:60px;
+		margin:10px;
+		border-color: blue;
+		border-style: solid;
+		padding-left:15px;
+	}
+
+main 
+	{
+	  flex: 1;
+	  padding: 20px;
+	  background-color: #1959bf;
+	  height:400px;
+	  color:white;
+	  
+	}
+
+aside 
+	{
+		flex-basis: 300px; /* Širina bočnog sadržaja */
+		padding: 20px;
+		background-color: #124980;
+		height:400px;
+	}
+.fsreslika
+	{
+		height:400px;
+	}
+
+footer
+	{
+		width:100%;
+		height:100px;
+		background-color: #24598f;
+		padding: 20px;
+		color:white;
+	}
+
+/* Media query za responzivnost */
+@media (max-width: 800px) {
+
+		 nav li {
+        width: 100%;
+        text-align: center;
+      }
+
+	.navtablica
+		{
+			flex-basis:100%;
+			max-width:100%;
+			
+			
+		}
+		
+		nav
+			{
+				width:100%;
+				height:200px;
+			}
+	
+	
+	.fsreslika
+		{
+			flex-basis:100%;
+			width:100px;
+			height:100px;
+		}	
+
+
+  aside 
+	  {
+		flex-basis: 100%; /* Prikazi bočni sadržaj prema celoj širini na manjim ekranima */
+		order: 4; /* Pomeri bočni sadržaj ispod glavnog sadržaja */
+		height:100px;
+	  }
+  footer 
+	  {
+		flex-basis: 100%; /* Prikazi bočni sadržaj prema celoj širini na manjim ekranima */
+		order: 5; /* Pomeri bočni sadržaj ispod glavnog sadržaja */
+		height:150px;
+	  }
+	  
+	  
+  
+}
+
+
+
+  </style>
+  <title>RWAVjeba3</title>
+</head>
+<body>
+  <header>
+    <h1>SVI STUDIJI NA JEDNOM MJESTU</h1>
+  </header>
+  <div class="sveispodhedera">
+    <nav>
+		
+			<ul>
+				<li><a class="navlink" href="https://github.com/Josip444/Josip-Simic/blob/main/rwazadaca2.txt">HTTP zadaca</a></li>
+				<li><a class="navlink" href="https://fsre.sum.ba/">FSRE</a></li>
+				<li><a class="navlink" href="https://fpmoz.sum.ba/">FPMOZ</a></li>
+				<li><a class="navlink" href="https://www.fer.unizg.hr/">FER</a></li>
+				<li><a class="navlink" href="https://www.fer.unizg.hr/">FER</a></li>
+				
+				
+			</ul>
+		
+		
+	</nav>
+	<main>
+		<h4>Predgovor</h4>
+      <p>Dragi budući studenti,</p>
+
+	<p>Želim podijeliti s vama nekoliko riječi o važnosti upisa i završetka fakulteta. 
+	Fakultetsko obrazovanje predstavlja jedinstvenu priliku za osobni i profesionalni rast. 
+	Bez obzira na izazove, svaki korak na tom putu donosi neprocjenjive prednosti.
+
+	Upisom na fakultet otvarate vrata znanja i istraživanja u području koje vas istinski zanima. 
+	Fakultet nije samo sredstvo za dobivanje diplome; to je platforma na kojoj gradite temelje svoje buduće karijere.
+	Svaki predmet, svaki izazov i svaki uspjeh oblikuju vas u osobu spremnu za izazove koji vam predstoje.</p>
+	
+	<h4>Lista fakulteta</h4>
+	<p>Fakultet strojarsta racunarstva i elektrotehnike,Medicinski fakultet Mostar</p>
+    </main>
+	
+    <aside>
+      <img class="fsreslika" src="fsreslika.jpg" alt="error">
+    </aside>
+	<footer>
+		<p>Autor: Josip Šimić</p>
+		<p>Kontakt: 063-444-444</p>
+		<p>E-mail: josipsimic@fsre.sum.ba <a href="josipsimic@fsre.sum.ba">Pošaljite email</a></p>
+	</footer>
+  </div>
+</body>
+</html>
