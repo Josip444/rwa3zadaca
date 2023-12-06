@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parni Brojevi i Kvadrati</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Funkcija za ispisivanje parnih brojeva i njihovih kvadrata
+    function ispisParnihIBrojeva() {
+      for (var i = 2; i <= 100;i++) {
+
+        if(i%2==0){
+        var kvadrat = i * i;
+        console.log(`Broj: ${i}, Kvadrat: ${kvadrat}`);
+        
+        // Dodajemo ispis u HTML dokument
+        document.write(`Broj: ${i}, Kvadrat: ${kvadrat}<br />`);
+        }
+      }
+    }
+
+    // Pozivamo funkciju
+    ispisParnihIBrojeva();
+  </script>
+</body>
+</html>

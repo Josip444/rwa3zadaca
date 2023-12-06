@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+ 
+ 
+ 	let brojac;
+ 		for(let i=2;i<=1000;i++)
+ 		{
+ 			let isprost=true;
+ 			for(brojac=2;brojac<i;brojac++){
+ 				if(i%brojac===0)
+ 				{	
+ 					isprost=false;
+ 					break;
+ 				}
+ 			}
+ 			if(isprost)
+ 			{
+ 				document.write(i+"</br>");
+ 			}
+ 		}
+
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Varijable</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Napisati JavaScript funkciju koja ima jedan ulazni argument koji je broj.
+    // Funkcija zatim ispisuje sve savršene brojeve od broja 1 do toga broja.
+
+    var niz = [];
+    var broj = 40;
+    var zbroj = 0;
+
+    for (var i = 1; i <= broj; i++) {
+      if (broj % i == 0) {
+        zbroj = zbroj + i;
+        niz.push(i);
+      }
+    }
+
+    if (zbroj == 2 * broj) {
+      document.write(niz);
+    }
+
+  </script>
+</body>
+</html>
