@@ -7,25 +7,28 @@
 <body>
  <script type="text/javascript">
  
- 
- 	let brojac;
- 		for(let i=2;i<=1000;i++)
- 		{
- 			let isprost=true;
- 			for(brojac=2;brojac<i;brojac++){
- 				if(i%brojac===0)
- 				{	
- 					isprost=false;
- 					break;
- 				}
- 			}
- 			if(isprost)
- 			{
- 				document.write(i+"</br>");
- 			}
- 		}
+	document.write("Brojevi:<br/>");	
+	for(var i=2;i<1000;i++)
+	{	
+		var k=true;
+		for(var j=2;j<i;j++)
+		{
+			if(i%j == 0  && i!= j){
+				k=false;
+				break;
+			}
+		}
+		
+		if(k)
+		{
+			document.write(i+"<br/>");
+			console.log(i);
 
-
+		}
+	}
+	
+	
+	
  </script>
 </body>
 </html>
